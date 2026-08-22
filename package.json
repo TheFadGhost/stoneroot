@@ -1,0 +1,11 @@
+{
+  "name": "stoneroot",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A voxel sandbox survival game. Dig toward the dark core; light is a resource.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/run.js"
+  },
+  "license": "MIT"
+}
