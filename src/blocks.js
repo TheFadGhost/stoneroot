@@ -207,12 +207,12 @@ export function faceTile(id, face) {
     const t = byId.get(id)?.tiles || {};
     const all = t.all;
     m = {
-      px: TILE(t.side ?? all),
-      nx: TILE(t.side ?? all),
-      pz: TILE(t.side ?? all),
-      nz: TILE(t.side ?? all),
-      py: TILE(t.top ?? all),
-      ny: TILE(t.bottom ?? all),
+      px: TILE[t.side ?? all],
+      nx: TILE[t.side ?? all],
+      pz: TILE[t.side ?? all],
+      nz: TILE[t.side ?? all],
+      py: TILE[t.top ?? all],
+      ny: TILE[t.bottom ?? all],
     };
     faceCache.set(key, m);
   }

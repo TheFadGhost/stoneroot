@@ -5,7 +5,7 @@
   "description": "A voxel sandbox survival game. Dig toward the dark core; light is a resource.",
   "scripts": {
     "start": "node server.js",
-    "test": "node --test tests/"
+    "test": "node tests/run.js"
   },
   "license": "MIT"
 }
