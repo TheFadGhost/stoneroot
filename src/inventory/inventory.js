@@ -82,6 +82,10 @@ export class Inventory {
     return this.slots.slice(0, HOTBAR_SLOTS);
   }
 
+  selectedItem() {
+    return this.slots[this.selected] || null;
+  }
+
   consumeSelected(n = 1) {
     const s = this.slots[this.selected];
     if (!s || s.count < n) return false;
